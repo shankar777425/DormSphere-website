@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>DormSphere </title>
+    <!-- Favicon -->
+<link rel="icon" type="image/png" href="logo.jpeg">
+<link rel="apple-touch-icon" href="logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <div class="logo">
+        <img src="logo.jpeg" alt="DormSphere Logo" class="logo-icon">
+        <span>DormSphere</span>
+    </div>
+
+    <!-- Hamburger button for mobile -->
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" class="btn-small-primary">Login</a></li>
+        <li><a href="signup.html" class="btn-small-primary">Sign Up</a></li>
+    </ul>
+</nav>
+
+<header class="hero">
+    <div class="hero-container">
+
+        <div class="hero-image">
+            <img src="logo.jpeg" alt="DormSphere Hero Banner" class="large-logo">
+        </div>
+
+        <div class="hero-content">
+            <h1>Smart Hostel Management Made Simple</h1>
+            <p>
+                Manage students, rooms, fees, complaints and notices in one powerful system designed for modern hostels.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#features" class="btn">Explore Features</a>
+                <a href="login.html" class="btn-outline">Get Started</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+    <section class="features" id="features">
+        <h2>Features</h2>
+
+        <div class="feature-grid">
+            <div class="card">
+                <h3>🎓 Student Management</h3>
+                <p>Register and manage student profiles easily.</p>
+            </div>
+
+            <div class="card">
+                <h3>🛏️ Room Management</h3>
+                <p>Assign and track hostel rooms in real time.</p>
+            </div>
+
+            <div class="card">
+                <h3>💰 Fee Tracking</h3>
+                <p>Monitor payments and pending dues instantly.</p>
+            </div>
+
+            <div class="card">
+                <h3>🛠️ Complaint System</h3>
+                <p>Handle student complaints efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About DormSphere</h2>
+        <p>
+            DormSphere is a modern hostel management system that replaces manual record keeping with a fast,
+            digital, and organized solution.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:shahshankar2010@gmail.com">shahshankar2010@gmail.com</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 DormSphere. All rights reserved.</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+
+        // Close menu when a link is tapped
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('active');
+            });
+        });
+    }
+</script>
+</body>
+</html>
