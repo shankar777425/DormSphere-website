@@ -33,23 +33,33 @@ body {
     border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
+/* Logo */
 .logo {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 24px;
-    font-weight: 700;
-    background: linear-gradient(90deg, #51cbf5 0%, #3b82f6 40%, #9d4edd 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
+/* Logo Image */
 .logo-icon {
-    height: 35px;
-    width: auto;
+    height: 40px;
+    width: 80px;
     object-fit: contain;
-    mix-blend-mode: lighten;
 }
+
+/* Logo Text */
+.logo h3 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1547ab;
+}
+
+/* Khoj Highlight */
+.logo-highlight {
+    color: #ff9900;
+}
+
 
 /* ================= NAV LINKS ================= */
 .nav-links {
