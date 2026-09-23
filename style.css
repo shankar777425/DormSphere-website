@@ -45,8 +45,8 @@ body {
 }
 
 .logo-icon {
-    height: 35px;
-    width: auto;
+    height: 40px;
+    width: 80px;
     object-fit: contain;
     mix-blend-mode: lighten;
 }
